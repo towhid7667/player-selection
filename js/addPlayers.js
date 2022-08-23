@@ -22,6 +22,12 @@ function selectionAdd(idofPlayers, btnId) {
     document.getElementById(btnId).addEventListener('click', function () {
         let playerInfoOne = addPlayers(idofPlayers);
         playerList(playerInfoOne);
+        this.disabled = true;
+        if (this.disabled === true) {
+            let buttons = document.getElementById(btnId);
+            buttons.style.backgroundColor = 'Gray';
+        }
+
     })
 
 }
