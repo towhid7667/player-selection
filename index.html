@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <title>Players-info</title>
+    <title>Players-Selection</title>
 </head>
 
 <body>
@@ -33,15 +33,15 @@
                     football,
                     Gaelic football, rugby league and rugby union.</p>
                 <div class="grid grid-cols-3 gap-4">
-                    <img src="images/ronaldo-01.png"
-                        class="mx-auto h-20 lg:h-60 bg-green-600 rounded-xl transition ease-in-out delay-150 bg-green-200 hover:-translate-y-1 hover:scale-110 hover:bg-green-600 duration-300 "
-                        alt="" srcset="">
-                    <img src="images/messi-01.png"
-                        class="mx-auto h-20 lg:h-60 bg-green-600 rounded-xl transition ease-in-out delay-150 bg-green-200 hover:-translate-y-1 hover:scale-110 hover:bg-green-600 duration-300 "
-                        alt="" srcset="">
-                    <img src="images/neymar-01.png"
-                        class="mx-auto h-20 lg:h-60 bg-green-600 rounded-xl transition ease-in-out delay-150 bg-green-200 hover:-translate-y-1 hover:scale-110 hover:bg-green-600 duration-300 "
-                        alt="" srcset="">
+                    <a href="#playes"><img src="images/ronaldo-01.png"
+                            class="mx-auto h-20 lg:h-60 bg-green-600 rounded-xl transition ease-in-out delay-150 bg-green-200 hover:-translate-y-1 hover:scale-110 hover:bg-green-600 duration-300 "
+                            alt="" srcset=""></a>
+                    <a href="#playes"><img src="images/messi-01.png"
+                            class="mx-auto h-20 lg:h-60 bg-green-600 rounded-xl transition ease-in-out delay-150 bg-green-200 hover:-translate-y-1 hover:scale-110 hover:bg-green-600 duration-300 "
+                            alt="" srcset=""></a>
+                    <a href="#playes"><img src="images/neymar-01.png"
+                            class="mx-auto h-20 lg:h-60 bg-green-600 rounded-xl transition ease-in-out delay-150 bg-green-200 hover:-translate-y-1 hover:scale-110 hover:bg-green-600 duration-300 "
+                            alt="" srcset=""></a>
                 </div>
             </div>
 
@@ -51,7 +51,7 @@
     <!-- main sections starts here -->
     <main>
 
-        <section>
+        <section id="playes">
             <div class="grid grid-cols-4 gap-4 w-9/12 mx-auto my-10">
                 <div class="player-01  flex flex-col items-center bg-gray-600 p-5 rounded-xl text-white ">
                     <img src="images/messi-03.jpg" alt="" class="rounded-xl">
@@ -157,35 +157,37 @@
                     <h1 class="lg:text-3xl text-center mb-3 font-medium">Budget</h1>
                     <div class="per-player flex mb-3 items-center justify-center">
                         <h1 class="mr-3 lg:text-xl">Per Player</h1>
-                        <input type="number" name="" id=""
+                        <input type="number" name="" id="perPlayer-cost"
                             class="w-2/4 border-2 border-white bg-gray-600 rounded-xl p-1">
 
                     </div>
                     <button
-                        class="text-white bg-blue-400 px-16 py-3 rounded-xl text-1xl font-medium bg-sky-500 hover:bg-sky-700">Calculate</button>
+                        class="text-white bg-blue-400 px-16 py-3 rounded-xl text-1xl font-medium bg-sky-500 hover:bg-sky-700"
+                        id="getPlayercost">Calculate</button>
 
                     <div class="player-expense flex mb-3 items-center justify-center my-3">
                         <h1 class="mr-3 lg:text-xl">Player Expense: </h1>
-                        <h2 class="lg:text-xl">$<span>5000</span></h2>
+                        <h2 class="lg:text-xl">$<span id="total-Player-expense">00</span></h2>
                     </div>
                     <div class="manager flex mb-3 items-center justify-center">
                         <h1 class="mr-3 lg:text-xl">Manager</h1>
-                        <input type="number" name="" id=""
+                        <input type="number" name="" id="manager"
                             class="w-2/4 border-2 border-white bg-gray-600 rounded-xl p-1">
 
                     </div>
                     <div class="coach flex mb-3 items-center justify-center">
                         <h1 class="mr-3 lg:text-xl">Coach</h1>
-                        <input type="number" name="" id=""
+                        <input type="number" name="" id="coach"
                             class="w-2/4 border-2 border-white bg-gray-600 rounded-xl p-1">
 
                     </div>
                     <button
-                        class="text-white bg-blue-400 px-10 py-3 rounded-xl text-1xl font-medium bg-sky-500 hover:bg-sky-700">Calculate
+                        class="text-white bg-blue-400 px-10 py-3 rounded-xl text-1xl font-medium bg-sky-500 hover:bg-sky-700"
+                        id="total-cost-calculate">Calculate
                         Total</button>
                     <div class="total-expense flex mb-3 items-center justify-around my-3">
                         <h1 class="mr-3 lg:text-xl">Total </h1>
-                        <h2 class="lg:text-xl text-orange-300 font-medium">$<span>5000</span></h2>
+                        <h2 class="lg:text-xl text-orange-300 font-medium">$<span id="totalCost">00</span></h2>
                     </div>
                 </div>
 
